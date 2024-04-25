@@ -1,3 +1,5 @@
+import Tabs from "@/app/ui/todos/tabs";
+
 export default function Todos() {
-  return <h1>todos</h1>;
+  return <Tabs />;
 }

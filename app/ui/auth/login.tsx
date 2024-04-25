@@ -3,99 +3,45 @@ export default function Login() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
       <div className="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-3xl w-50 max-w-md">
         <div className="font-medium self-center text-xl sm:text-3xl text-gray-800">
-          Welcome Back
+          Welcome Back!
         </div>
         <div className="mt-4 self-center text-xl sm:text-sm text-gray-800">
-          Connect with your GOOGLE account
+          Connect with your Google account
         </div>
 
         <div className="mt-10">
           <form action="#">
-            <div className="flex flex-col mb-5">
-              <label
-                htmlFor="email"
-                className="mb-1 text-xs tracking-wide text-gray-600"
-              >
-                E-Mail Address:
-              </label>
-              <div className="relative">
-                <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
-                  <i className="fas fa-at text-blue-500"></i>
-                </div>
-
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  className="text-sm placeholder-gray-500 pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
-                  placeholder="Enter your email"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col mb-6">
-              <label
-                htmlFor="password"
-                className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600"
-              >
-                Password:
-              </label>
-              <div className="relative">
-                <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
-                  <span>
-                    <i className="fas fa-lock text-blue-500"></i>
-                  </span>
-                </div>
-
-                <input
-                  id="password"
-                  type="password"
-                  name="password"
-                  className="text-sm placeholder-gray-500 pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
-                  placeholder="Enter your password"
-                />
-              </div>
-            </div>
-
             <div className="flex w-full">
               <button
                 type="submit"
-                className="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-2xl py-2 w-full transition duration-150 ease-in"
+                className="flex mt-2 items-center justify-center focus:outline-none  bg-gray-50 text-sm font-medium hover:bg-sky-100 hover:text-blue-600  rounded-2xl py-2 w-full transition duration-150 ease-in"
               >
-                <span className="mr-2 uppercase">Sign In</span>
-                <span>
-                  <svg
-                    className="h-6 w-6"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </span>
+                <span className="mr-2 text-blue-500">Sign-In with Google</span>
+                <svg
+                  className="h-6 w-6"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z"
+                    fill="#FFC107"
+                  />
+                  <path
+                    d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z"
+                    fill="#FF3D00"
+                  />
+                  <path
+                    d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z"
+                    fill="#4CAF50"
+                  />
+                  <path
+                    d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z"
+                    fill="#1976D2"
+                  />
+                </svg>
               </button>
             </div>
           </form>
         </div>
-      </div>
-      <div className="flex justify-center items-center mt-6">
-        <a
-          href="#"
-          target="_blank"
-          className="inline-flex items-center text-gray-700 font-medium text-xs text-center"
-        >
-          <span className="ml-2">
-            You don't have an account?{" "}
-            <a
-              href="#"
-              className="text-xs ml-2 text-blue-500 font-semibold"
-            >
-              Register now
-            </a>
-          </span>
-        </a>
       </div>
     </div>
   );
